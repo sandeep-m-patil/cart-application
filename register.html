@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipZon</title>
+    <style>
+        .header{
+            background-color: blue;
+            color: white;
+            padding: 8px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .register-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            margin: 10px;
+            height: 30px;
+            width: 250px;
+            padding: 0px 5px;
+        }
+        
+        .register-btn{
+            margin: 10px;
+            height: 30px;
+            width: 264px;
+            padding: 0px 5px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="heading">Register</div>
+    </div>
+
+
+
+    <div class="register-page">
+        <h2 style="text-align: center;">Create a new account</h2>
+
+<form class="register-form">
+    <input type="text" id="name" placeholder="Name">
+    <input type="number" id="age" placeholder="Age">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <input type="password" id="re-password" placeholder="Re-Password">
+    <input type="number" id="number" placeholder="Phone Number">
+
+    <button class="register-btn" onclick="register_des(event)">Register</button>
+</form>
+
+<p style="text-align: center;">Already have an account ? <a href="index.html" >Click here for Login</a></p>
+       
+
+        <p id="login-info" style="text-align: center; font-weight: bold;"></p>
+    </div>
+
+   <script src="main.js"></script>
+</body>
+</html>
