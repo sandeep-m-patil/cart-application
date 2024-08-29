@@ -27,15 +27,19 @@ function register_des(event){
     event.preventDefault();
     let username = document.getElementById("name").value;
     let password = document.getElementById("password").value;
-
-    registerLog.push({
-        'username':`${username}`,
-        'password':`${password}`,
+console.log(username)
+    if(username!=='' && password!==''){
+        registerLog.push({
+            'username':`${username}`,
+            'password':`${password}`,
+        
+        })
     
-    })
-
-    localStorage.setItem("registerData",JSON.stringify(registerLog))
-    console.log(username,password);
+        localStorage.setItem("registerData",JSON.stringify(registerLog))
+    alert("Successfully Registered")
+    window.location.href = "index.html";
+    }
+      console.log(username,password);
 
 }
 

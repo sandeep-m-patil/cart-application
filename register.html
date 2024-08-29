@@ -53,14 +53,14 @@
         <h2 style="text-align: center;">Create a new account</h2>
 
 <form class="register-form">
-    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="name" placeholder="Name" required>
     <input type="number" id="age" placeholder="Age">
     <input type="email" id="email" placeholder="Email">
-    <input type="password" id="password" placeholder="Password">
+    <input type="password" id="password" placeholder="Password" required>
     <input type="password" id="re-password" placeholder="Re-Password">
     <input type="number" id="number" placeholder="Phone Number">
 
-    <button class="register-btn" onclick="register_des(event)">Register</button>
+    <button type="submit"  value="Submit" class="register-btn" onclick="register_des(event)">Register</button>
 </form>
 
 <p style="text-align: center;">Already have an account ? <a href="index.html" >Click here for Login</a></p>
