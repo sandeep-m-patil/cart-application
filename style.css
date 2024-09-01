@@ -2,13 +2,13 @@
 
 
 
+
 body {
   margin: 0px;
   padding: 0px;
-
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-weight:400;
+  font-style:normal;
 
 }
 
@@ -24,6 +24,7 @@ body {
   .head {
     width: 100vw !important;
   }
+
 
 
   .menu ul {
@@ -69,7 +70,7 @@ body {
 
   }
 
-  .card-cart button {
+  .card-cart .rmbtn {
     font-size: 10px !important;
     padding: px !important;
     margin: 0px !important;
@@ -112,11 +113,12 @@ nav {
 .head {
   width: 40vw;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 
 
 }
+
 
 .h-img {
   padding: 12px 48px;
@@ -177,10 +179,10 @@ nav {
 .card-cart {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 12px;
-  width:60rem;
+  width:80rem;
   height:7rem;
   display: grid;
-  grid-template-columns: 1fr 1.5fr 0.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "img h3 p button";
   grid-gap: 20px;
@@ -259,7 +261,7 @@ background-color: #f9d108;
 }
 
 
-.card-cart button {
+.card-cart .rmbtn {
   border: none;
   outline: 0;
   padding: 12px;
@@ -271,7 +273,7 @@ background-color: #f9d108;
 }
 
 
-.card-cart button:hover {
+.card-cart .rmbtn:hover {
   background-color: #f90808;
 }
 
