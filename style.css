@@ -60,7 +60,7 @@ body {
     justify-content: center !important;
     padding: 12px 28px !important;
     font-size: 10px !important;
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1.2fr 0.8fr !important;
     grid-template-rows: 1fr 1fr !important;
     overflow:visible !important;
     height:8rem !important;
