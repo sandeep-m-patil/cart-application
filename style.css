@@ -67,7 +67,7 @@ body {
     grid-template-areas: 
     "img h3 "
     "p button" !important;
-    margin: 0px !important;
+    margin: 5px 0px !important;
 
   }
 
