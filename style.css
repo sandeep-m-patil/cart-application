@@ -66,6 +66,9 @@ body {
     grid-template-areas: 
     "img h3 "
     "p button" !important;
+grid-gap: 0px !important;
+    margin: 0px 7px !important;
+   
 
   }
 
@@ -314,6 +317,12 @@ margin:12px 0px !important;
 
 
 
+<<<<<<< HEAD
+=======
+.card-cart img {
+  width: 36%;
+}
+>>>>>>> 00535a416e322eee512e077dc64272393e3b3823
 
 .rmbtn:hover {
   background-color: #f90808;
