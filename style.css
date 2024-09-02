@@ -200,10 +200,7 @@ overflow: hidden;
 
 
 
-.body{
-  margin: 0px;
-  padding: 0px;
-}
+
 
 .products{
 display: flex;
@@ -260,7 +257,7 @@ background-color: #f9d108;
 
 
 .card-cart img {
-  width: 42%;
+  width: 36%;
 }
 
 
