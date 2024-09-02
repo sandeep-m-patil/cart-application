@@ -93,6 +93,7 @@ function show_home() {
 
 
     document.querySelector('.products').innerHTML = a;
+    
 
 }
 
@@ -136,13 +137,20 @@ function addtoCart(i){
     localStorage.setItem("data",JSON.stringify(cartlist))
 
     
+    show_cart_count()
+
 }
 
+function show_cart_count(){
 
+    let cart_count=cartlist.length;
 
+    document.getElementById("cart_count").innerText=`(${cart_count})`;
 
+    
+}
 
-
+show_cart_count()
 function logout(){
     window.location.href = "index.html";
 }

@@ -10,21 +10,46 @@ let cartlist = JSON.parse(localStorage.getItem("data")) || []
 
 function show_cart() {
 
+    
+
     console.table(cartlist)
     if (cartlist.length !== 0) {
         let a = ``;
 
         cartlist.forEach((item) => {
             a += `
-                <div class="card-cart">
-                  <div><img  src=${item.img} alt=${item.title}></div>
-                  <div><h3 class="ptext">${item.name}</h3></div>
-                  <div><p  class="ptext">₹ ${item.price} X 
-<button onclick="count(${cartlist.indexOf(item)},-1)">-</button> ${item.quantity} 
+               
 
-<button onclick="count(${cartlist.indexOf(item)},+1)">+</button></p></div>
-                 <div><button class="rmbtn" onclick="remove_item(${cartlist.indexOf(item)})">Remove</button></div>
-                </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+                 <div class="carts-item">
+
+            <div class="item1 ptext"><img  class="carts-item-img"
+                    src=${item.img} alt=${item.name}></div>
+
+            <div class="item2 ptext">
+                <h3>${item.name}</h3>
+            </div>
+            <div class="item3 ptext">
+                <h4> ₹${item.price} X  
+<button class="count-btn" onclick="count(${cartlist.indexOf(item)},-1)">-</button> ${item.quantity} 
+
+<button class="count_btn" onclick="count(${cartlist.indexOf(item)},+1)">+</button></h4>
+            </div>
+            <div class="item4 ptext"><button class="rmbtn" onclick="remove_item(${cartlist.indexOf(item)})">Remove</button></div>
+
+
+        </div>
                       `
         });
 
@@ -39,9 +64,7 @@ function show_cart() {
         document.querySelector('.carts').innerHTML = `<h3 style="text-align:center">Shopping Cart is Empty</h3>`;
 
     }
-
-
-
+   
 
 }
 
