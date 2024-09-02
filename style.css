@@ -293,7 +293,7 @@ margin:12px 0px !important;
         .count_btn {
             background-color: green;
             color: white;
-            padding: 5px 12px;
+            padding: 1px 3px;
             border: 1px solid black;
             border-radius: 5px;
 
@@ -302,7 +302,7 @@ margin:12px 0px !important;
         .count-btn {
             background-color: red;
             color: white;
-            padding: 5px 12px;
+            padding: 1px 3px;
             border: 1px solid black;
             border-radius: 5px;
 
