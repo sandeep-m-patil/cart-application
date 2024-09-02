@@ -17,22 +17,7 @@ function show_cart() {
         let a = ``;
 
         cartlist.forEach((item) => {
-            a += `
-               
-
-                
-
-
-
-
-
-
-
-
-
-
-
-                 <div class="carts-item">
+            a += ` <div class="carts-item">
 
             <div class="item1 ptext"><img  class="carts-item-img"
                     src=${item.img} alt=${item.name}></div>
@@ -41,10 +26,10 @@ function show_cart() {
                 <h3>${item.name}</h3>
             </div>
             <div class="item3 ptext">
-                <h4> ₹${item.price} X  
+                <p> ₹${item.price} X  
 <button class="count-btn" onclick="count(${cartlist.indexOf(item)},-1)">-</button> ${item.quantity} 
 
-<button class="count_btn" onclick="count(${cartlist.indexOf(item)},+1)">+</button></h4>
+<button class="count_btn" onclick="count(${cartlist.indexOf(item)},+1)">+</button></p>
             </div>
             <div class="item4 ptext"><button class="rmbtn" onclick="remove_item(${cartlist.indexOf(item)})">Remove</button></div>
 
