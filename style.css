@@ -7,8 +7,8 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Poppins", sans-serif;
-  font-weight:400;
-  font-style:normal;
+  font-weight: 400;
+  font-style: normal;
 
 }
 
@@ -47,9 +47,9 @@ body {
   }
 
 
-  .menu ul a{
+  .menu ul a {
     padding: 9px !important;
-  margin: 0px 0px !important;
+    margin: 0px 0px !important;
 
 
   }
@@ -61,14 +61,14 @@ body {
     font-size: 10px !important;
     grid-template-columns: 1fr 1fr !important;
     grid-template-rows: 1fr 1fr !important;
-    overflow:visible !important;
-    height:8rem !important;
-    grid-template-areas: 
-    "img h3 "
-    "p button" !important;
-grid-gap: 0px !important;
+    overflow: visible !important;
+    height: 8rem !important;
+    grid-template-areas:
+      "img h3 "
+      "p button" !important;
+    grid-gap: 0px !important;
     margin: 0px 7px !important;
-   
+
 
   }
 
@@ -78,30 +78,30 @@ grid-gap: 0px !important;
     margin: 0px !important;
 
   }
-  
 
-  
+
+
 
   .ptext {
     margin: 0px 12px !important;
   }
 
-  
+
   .carts-item {
     grid-template-areas:
-        'img title'
-        'img price'
-        'img button' !important;
-        width: 30rem !important;
-        height:14rem !important;
+      'img title'
+      'img price'
+      'img button' !important;
+    width: 30rem !important;
+    height: 14rem !important;
 
-}
+  }
 
 
 
-.carts-item-img {
-  width: 60% !important;
-}
+  .carts-item-img {
+    width: 70% !important;
+  }
 
 
 }
@@ -164,12 +164,12 @@ nav {
 
 .menu ul li {
   padding: 6px;
-  margin:3px;
+  margin: 3px;
 }
 
 .menu ul a {
-  padding:12px 24px;
-  margin:24px;
+  padding: 12px 24px;
+  margin: 24px;
 
 }
 
@@ -195,50 +195,50 @@ nav {
 
 
 
-.products{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-padding: 12px;
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
 }
 
 .card {
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-width: 17rem;
-height: 23rem;
-margin: 6px;
-text-align: center;
-font-family: arial;
-padding: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 17rem;
+  height: 23rem;
+  margin: 6px;
+  text-align: center;
+  font-family: arial;
+  padding: 12px;
 }
 
-.card > img {
-padding: 10px;
-float: center;
-width:  auto;
-height:8rem;
-background-size: cover;
+.card>img {
+  padding: 10px;
+  float: center;
+  width: auto;
+  height: 9rem;
+  background-size: cover;
 }
 
 .price {
-color: grey;
-font-size: 24px;
+  color: grey;
+  font-size: 24px;
 }
 
 .card button {
-border: none;
-outline: 0;
-padding: 12px;
-background-color: #ffd814;
-text-align: center;
-cursor: pointer;
-width: 100%;
-font-size: 18px;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  background-color: #ffd814;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 
 .card button:hover {
-background-color: #f9d108;
+  background-color: #f9d108;
 }
 
 
@@ -246,85 +246,83 @@ background-color: #f9d108;
 
 
 
- .item1 {
-            grid-area: img;
-            padding: 12px;
-            width: 100%;
-        }
+.item1 {
+  grid-area: img;
+  padding: 12px;
+  width: 100%;
+}
 
-        .item2 {
-            grid-area: title;
-        }
+.item2 {
+  grid-area: title;
+}
 
-        .item3 {
-            grid-area: price;
-        }
+.item3 {
+  grid-area: price;
+}
 
-        .item4 {
-            grid-area: button;
-        }
-
-
-        .carts-item {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            border-radius: 12px;
-margin:12px 0px !important;
-            display: grid;
-            grid-template-areas:
-                'img title price button';
-
-            justify-content: center;
-            align-items: center;
-            padding: 16px;
-            margin: 0px;
-            width: 65rem;
-            height: 10rem;
-
-        }
-
-        .carts-item-img {
-            width: 30%;
-        }
-
-        .ptext {
-            margin: 0px 36px;
-        }
-
-        .count_btn {
-            background-color: green;
-            color: white;
-            padding: 5px 12px;
-            border: 1px solid black;
-            border-radius: 5px;
-
-        }
-
-        .count-btn {
-            background-color: red;
-            color: white;
-            padding: 5px 12px;
-            border: 1px solid black;
-            border-radius: 5px;
-
-        }
-
-        .rmbtn {
-            background-color: red;
-            padding: 5px 12px;
-            border: 1px solid black;
-            border-radius: 12px;
-        }
+.item4 {
+  grid-area: button;
+}
 
 
+.carts-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin: 12px 0px !important;
+  display: grid;
+  grid-template-areas:
+    'img title price button';
 
-<<<<<<< HEAD
-=======
-.card-cart img {
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  margin: 0px;
+  width: 65rem;
+  height: 10rem;
+
+}
+
+.carts-item-img {
+  width: 30%;
+}
+
+.ptext {
+  margin: 0px 36px;
+}
+
+.count_btn {
+  background-color: green;
+  color: white;
+  padding: 5px 12px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+
+.count-btn {
+  background-color: red;
+  color: white;
+  padding: 5px 12px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+
+.rmbtn {
+  background-color: red;
+  color: white;
+  padding: 5px 12px;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+
+
+<<<<<<< HEAD=======.card-cart img {
   width: 36%;
 }
->>>>>>> 00535a416e322eee512e077dc64272393e3b3823
 
-.rmbtn:hover {
+>>>>>>>00535a416e322eee512e077dc64272393e3b3823 .rmbtn:hover {
   background-color: #f90808;
 }
 

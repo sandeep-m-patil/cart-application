@@ -1,6 +1,3 @@
-let name= localStorage.getItem("loginname")
-
-document.getElementById('name').innerHTML = `<h1>Welcome ${name}<h1>`
 
 
 let products = [
@@ -151,6 +148,7 @@ function show_cart_count(){
 }
 
 show_cart_count()
+
 function logout(){
     window.location.href = "index.html";
 }

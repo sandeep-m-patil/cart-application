@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myAccount</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @media only screen and (max-width: 600px) {
+            .myaccount-card {
+                grid-template-areas:
+                    'img'
+                    'name'
+                    'gender'
+                    'dob'
+                    'email'
+                    'mbno'
+                    'address' !important;
+                width: 21rem !important;
+                height: 45rem !important;
+                margin: 12px 0px !important;
+                overflow: hidden !important;
+            }
+
+
+            .item1 {
+                grid-area: name;
+                padding: 6px 6px !important;
+
+
+            }
+
+            .item2 {
+                grid-area: gender;
+                padding: 6px 6px !important;
+
+
+
+            }
+
+            .item3 {
+                grid-area: dob;
+                padding: 6px 6px !important;
+
+
+
+            }
+
+            .item4 {
+                grid-area: email;
+                padding: 6px 6px !important;
+
+            }
+
+            .item5 {
+                grid-area: mbno;
+                padding: 6px 6px !important;
+
+
+            }
+
+            .item6 {
+                grid-area: address;
+                padding: 6px 6px !important;
+
+
+            }
+
+
+
+
+
+
+        }
+
+
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 12px;
+            flex-direction: column;
+        }
+
+        .item0 {
+            grid-area: img;
+            padding: 6px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item1 {
+            grid-area: name;
+            padding: 6px 36px;
+
+
+        }
+
+        .item2 {
+            grid-area: gender;
+            padding: 6px 36px;
+
+
+
+        }
+
+        .item3 {
+            grid-area: dob;
+            padding: 6px 36px;
+
+
+
+        }
+
+        .item4 {
+            grid-area: email;
+            padding: 6px 36px;
+            /* margin: 0px 24px; */
+
+        }
+
+        .item5 {
+            grid-area: mbno;
+            padding: 6px 36px;
+
+
+        }
+
+        .item6 {
+            grid-area: address;
+            padding: 6px 36px;
+
+
+        }
+
+        .item7 {
+            background-color: red;
+            color: white;
+            border: 1px solid black;
+            border-radius: 12px;
+            width: 6rem;
+            margin: 6px;
+        }
+
+        .myaccount-card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-areas:
+                'img name'
+                'gender dob'
+                'email mbno'
+                'address address';
+            width: 50rem;
+            height: 25rem;
+            margin: 12px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="head" id="name">
+
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li> <a href="home.html">
+                        Home
+                    </a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#" style="color:black;background-color: white;">myAccount</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="main">
+
+        <div class="myaccount-card">
+            <div class="item0">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcQg-lr5__zRqY3mRg6erzAD9n4BGp3G8VfA&s"
+                    style="width: 9rem;" alt="John">
+            </div>
+
+            <h3 class="item1" id="accname" style="text-align: center;"></h3>
+            <p class="item2">Gender : <span id="gender"></span></p>
+            <p class="item3">Date of birth : <span id="dob"></span></p>
+            <p class="item4">Email Id : <span id="email"></span></p>
+            <p class="item5">Mobile no : <span id="mbno"></span></p>
+            <p class="item6">Address : <span id="address"></span></p>
+
+
+        </div>
+
+
+        <button class="item7" onclick="logout()">
+            <h3>LogOut</h3>
+        </button>
+
+
+    </div>
+
+
+
+
+
+
+
+    <footer>
+        <div>
+            copywrite with @sandeep-m-patil
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
