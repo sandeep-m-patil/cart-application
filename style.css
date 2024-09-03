@@ -273,12 +273,21 @@ nav {
   grid-template-areas:
     'img title price button';
 
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   padding: 16px;
   margin: 0px;
   width: 65rem;
   height: 10rem;
+=======
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            margin: 0px;
+            width: 65rem;
+            height: 10rem;
+>>>>>>> 2a4de22fbc05692ccbeae8c5e187fbd6bf0dcda8
 
 }
 
@@ -290,21 +299,39 @@ nav {
   margin: 0px 36px;
 }
 
+<<<<<<< HEAD
 .count_btn {
   background-color: green;
   color: white;
   padding: 5px 12px;
   border: 1px solid black;
   border-radius: 5px;
+=======
+        .count_btn {
+            background-color: green;
+            color: white;
+            padding: 2px 6px;
+            border: 1px solid black;
+            border-radius: 5px;
+>>>>>>> 2a4de22fbc05692ccbeae8c5e187fbd6bf0dcda8
 
 }
 
+<<<<<<< HEAD
 .count-btn {
   background-color: red;
   color: white;
   padding: 5px 12px;
   border: 1px solid black;
   border-radius: 5px;
+=======
+        .count-btn {
+            background-color: red;
+            color: white;
+            padding: 2px 6px;
+            border: 1px solid black;
+            border-radius: 5px;
+>>>>>>> 2a4de22fbc05692ccbeae8c5e187fbd6bf0dcda8
 
 }
 
