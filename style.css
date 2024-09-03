@@ -56,33 +56,10 @@ body {
 
 
 
-  .card-cart {
-    font-size: 10px !important;
-   grid-template-columns: 1.2fr 0.8fr !important;
-  grid-template-rows: 1fr 1fr !important;
-  grid-template-areas: "img h3"" p button"!important;
-  justify-content: center !important;
-  align-items: center !important;
-  text-align: center !important;
-overflow: hidden !important;
-    height:10rem !important;
-   
-
-  }
-
-  .card-cart .rmbtn {
-    font-size: 10px !important;
-    padding: px !important;
-    margin: 0px !important;
-
-  }
   
 
   
 
-  .ptext {
-    margin: 0px 12px !important;
-  }
 
   
 
@@ -176,31 +153,8 @@ nav {
 }
 
 
-.card-cart {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 12px;
-  width:80rem;
-  height:7rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "img h3 p button";
-  grid-gap: 20px;
-  padding: 24px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-overflow: hidden;
-  border-radius: 12px;
-}
 
 
-
-
-.body{
-  margin: 0px;
-  padding: 0px;
-}
 
 .products{
 display: flex;

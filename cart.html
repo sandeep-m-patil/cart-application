@@ -6,7 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="style.css">
-  
+    <style>
+
+@media only screen and (max-width: 600px) {
+    .carts-item {
+
+        grid-template-areas: 'img name'
+        'img price'
+        'img btn'!important;
+        width: 60rem !important;
+        height: 12rem !important;
+        padding: 12px;
+
+    }
+
+    .ptext {
+            margin: 0px 8px !important;
+        }
+        .carts-item-img {
+            width: 80% !important;
+        }
+}
+
+
+        .item1 {
+            grid-area: img;
+        }
+
+        .item2 {
+            grid-area: name;
+
+        }
+
+        .item3 {
+            grid-area: price;
+
+        }
+
+        .item4 {
+            grid-area: btn;
+
+        }
+
+
+        .carts-item {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            width: 60rem !important;
+            height: 10rem;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 240px;
+            grid-template-areas: 'img name name price price btn';
+
+padding: 12px;
+margin: 12px 0px;
+
+        }
+
+        .carts-item-img {
+            width: 40%;
+        }
+
+        .ptext {
+            margin: 0px 36px;
+        }
+
+        .count-btn{
+            background-color: red;
+            color: white;
+            width: 2rem;
+            border: 1.5px solid black;
+        }
+        .count_btn{
+            background-color: green;
+            color: white;
+            width: 2rem;
+            border: 1.5px solid black;
+        }
+        .rmbtn{
+            background-color: red;
+            color: white;
+            width: 5rem;
+            border: 1.5px solid black;
+            padding: 5px;
+            border-radius: 12px;
+        }
+    </style>
+
 
 </head>
 
@@ -33,7 +121,7 @@
     <div class="carts"></div>
     <div id="cart-bill"></div>
 
-  
+
 
 
 
@@ -45,7 +133,7 @@
 
 
     <script src="cart.js"></script>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
 </body>
 
 </html>

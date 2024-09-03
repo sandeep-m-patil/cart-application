@@ -25,12 +25,14 @@ function show_cart() {
             <div class="item2 ptext">
                 <h3>${item.name}</h3>
             </div>
+
             <div class="item3 ptext">
                 <p> ₹${item.price} X  
 <button class="count-btn" onclick="count(${cartlist.indexOf(item)},-1)">-</button> ${item.quantity} 
 
 <button class="count_btn" onclick="count(${cartlist.indexOf(item)},+1)">+</button></p>
             </div>
+            
             <div class="item4 ptext"><button class="rmbtn" onclick="remove_item(${cartlist.indexOf(item)})">Remove</button></div>
 
 
