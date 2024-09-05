@@ -19,9 +19,10 @@
                     'mbno'
                     'address' !important;
                 width: 21rem !important;
-                height: 45rem !important;
-                margin: 12px 0px !important;
+                height: 40rem !important;
+                margin: 6px 0px !important;
                 overflow: hidden !important;
+                padding: 0px 16px !important;
             }
 
 
@@ -159,8 +160,9 @@
                 'email mbno'
                 'address address';
             width: 50rem;
-            height: 25rem;
-            margin: 12px;
+            height: 26rem;
+            margin: 16px;
+            padding: 12px;
         }
     </style>
 
@@ -199,18 +201,15 @@
 
         <div class="myaccount-card">
             <div class="item0">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcQg-lr5__zRqY3mRg6erzAD9n4BGp3G8VfA&s"
-                    style="width: 9rem;" alt="John">
+                <img id="output" style="width: 9rem;margin:16px;border-radius: 50%;" alt="ppimage" >
             </div>
 
             <h3 class="item1" id="accname" style="text-align: center;"></h3>
-            <p class="item2">Gender : <span id="gender"></span></p>
-            <p class="item3">Date of birth : <span id="dob"></span></p>
-            <p class="item4">Email Id : <span id="email"></span></p>
-            <p class="item5">Mobile no : <span id="mbno"></span></p>
-            <p class="item6">Address : <span id="address"></span></p>
-
-
+            <p class="item2"><strong>Gender : </strong><span id="gender"></span></p>
+            <p class="item3"><strong>Date of birth : </strong><span id="dob"></span></p>
+            <p class="item4"><strong>Email Id : </strong><span id="email"></span></p>
+            <p class="item5"><strong>Mobile no : </strong><span id="mbno"></span></p>
+            <p class="item6"><strong>Address : </strong><span id="address"></span></p>
         </div>
 
 
@@ -239,7 +238,49 @@
 
 
 
-    <script src="main.js"></script>
+    <script>
+let registerLog = JSON.parse(localStorage.getItem("registerData")) || []
+let login_name = localStorage.getItem("loginname")
+
+document.getElementById('name').innerHTML = `<h1>Welcome ${login_name}<h1>`
+
+
+        
+let pp_img = document.getElementById("output");
+let ppname = document.getElementById("accname");
+let gender = document.getElementById("gender");
+let dob = document.getElementById("dob");
+let email = document.getElementById("email");
+let mbno = document.getElementById("mbno");
+let address = document.getElementById("address");
+
+function display_detials() {
+
+    registerLog.forEach((item) => {
+        if (login_name == item.username) {
+            pp_img.src =item.pp;
+            ppname.innerText = login_name;
+            gender.innerText = item.gender
+            dob.innerText = item.dob
+            email.innerText = item.email
+            mbno.innerText = item.mobileno
+            address.innerText = item.address
+
+        }
+    }
+    )
+
+
+}
+
+
+display_detials()
+
+function logout() {
+    window.location.href = "index.html";
+}
+
+    </script>
 
 </body>
 

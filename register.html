@@ -9,12 +9,13 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-*{
-    font-family: "Poppins", sans-serif;
+        * {
+            font-family: "Poppins", sans-serif;
             font-weight: 400;
             font-style: normal;
 
-}
+        }
+
         body {
             margin: 0px;
             padding: 0px;
@@ -38,7 +39,9 @@
             align-items: center;
         }
 
-        input ,select , textarea{
+        input,
+        select,
+        textarea {
             margin: 10px;
             height: 30px;
             width: 250px;
@@ -57,7 +60,9 @@
 <body>
 
     <div class="header">
-        <div class="heading"><h2>Register</h2></div>
+        <div class="heading">
+            <h2>Register</h2>
+        </div>
     </div>
 
 
@@ -67,19 +72,28 @@
 
         <form class="register-form">
 
-            <input type="text" id="name" placeholder="Full Name" >
+
+            <label for="file">Upload Image</label>
+            <input type="file" accept="image/*" name="image" id="fileUpload" onchange="loadFile(event)">
+
+
+
+            <input type="text" id="name" placeholder="Full Name">
+
+            <br><label for="Date of Birth">Date of Birth : </label>
+
             <input type="date" id="dob" placeholder="Date Of Birth">
 
-            <br><label for="gender">Select Gender : </label><br>
+            <br><label for="gender">Select Gender : </label>
             <select name="gender" id="gender">
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-              <option value="Others">Others</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
             </select>
             <br>
 
             <input type="email" id="email" placeholder="Email">
-            <input type="password" id="password" placeholder="Password" >
+            <input type="password" id="password" placeholder="Password">
             <input type="password" placeholder="Re-Password">
             <input type="number" id="mobileno" placeholder="Phone Number">
             <textarea name="address" id="address" rows="4" cols="36" placeholder="Enter your address"></textarea>

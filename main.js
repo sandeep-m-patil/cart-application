@@ -29,6 +29,21 @@ function login_des(event) {
 
 }
 
+let ppimg;
+
+
+const fileInput = document.getElementById("fileUpload")
+
+fileInput.addEventListener("change", async () => {
+    let [file] = fileInput.files
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      ppimg = e.target.result;
+    };
+
+    reader.readAsDataURL(file);
+})
 
 
 
@@ -46,6 +61,8 @@ function register_des(event) {
 
     if (username !== '' && password !== '') {
         registerLog.push({
+
+            'pp': `${ppimg}`,
             'username': `${username}`,
             'dob': `${dob}`,
             'gender': `${gender}`,
@@ -68,39 +85,6 @@ function register_des(event) {
 
 }
 
-
-
-let ppname = document.getElementById("accname");
-let gender = document.getElementById("gender");
-let dob = document.getElementById("dob");
-let email = document.getElementById("email");
-let mbno = document.getElementById("mbno");
-let address = document.getElementById("address");
-
-function display_detials() {
-
-    registerLog.forEach((item) => {
-        if (login_name == item.username) {
-            ppname.innerText = login_name;
-            gender.innerText = item.gender
-            dob.innerText = item.dob
-            email.innerText = item.email
-            mbno.innerText = item.mobileno
-            address.innerText = item.address
-
-        }
-    }
-    )
-
-
-}
-
-
-display_detials()
-
-function logout() {
-    window.location.href = "index.html";
-}
 
 console.table(registerLog)
 
